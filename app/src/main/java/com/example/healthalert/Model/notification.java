@@ -12,7 +12,7 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
-import com.example.healthalert.MainActivity;
+import com.example.healthalert.Login_Activity;
 import com.example.healthalert.R;
 
 public class notification {
@@ -47,9 +47,9 @@ public class notification {
                 .setAutoCancel(true).setContentTitle(context.getString(R.string.app_name))
                 .setContentText(message);
 
-        Intent resultIntent = new Intent(context, MainActivity.class);
+        Intent resultIntent = new Intent(context, Login_Activity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-        stackBuilder.addParentStack(MainActivity.class);
+        stackBuilder.addParentStack(Login_Activity.class);
         stackBuilder.addNextIntent(resultIntent);
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 

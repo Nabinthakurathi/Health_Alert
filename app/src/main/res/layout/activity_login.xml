@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -23,7 +23,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:hint="Username"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/colorAccent"
         android:textSize="30dp" />
 
     <EditText
@@ -34,7 +34,7 @@
         android:layout_marginTop="30dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/colorAccent"
         android:textSize="30dp" />
 
     <Button
@@ -54,7 +54,7 @@
         android:layout_margin="15dp"
         android:layout_marginLeft="10dp"
         android:text="No account ? Sign up"
-        android:textColor="#040404"
+        android:textColor="#2C52F9"
         android:textSize="20sp" />
     <TextView
         android:layout_width="match_parent"

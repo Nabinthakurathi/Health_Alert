@@ -85,7 +85,7 @@ public class Register_Activity extends AppCompatActivity {
                         SaveImageOnly();
                         SignUp();
                         DisplayNotification();
-                        startActivity(new Intent(Register_Activity.this,MainActivity.class));
+                        startActivity(new Intent(Register_Activity.this,Login_Activity.class));
                     }
 
                 }else {
