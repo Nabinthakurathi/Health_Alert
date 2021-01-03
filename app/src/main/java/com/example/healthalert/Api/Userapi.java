@@ -24,8 +24,6 @@ public interface Userapi {
     @POST("users/login")
     Call<SignUpResponse> CheckUser(@Field("username") String username, @Field("password") String password);
 
-
-
     @Multipart
     @POST("upload")
     Call<ImageResponse> uploadImage(@Part MultipartBody.Part img);
