@@ -26,7 +26,6 @@
 <!--            android:value="@string/google_maps_key" />-->
         <activity android:name=".Login_Activity">
 
-
         </activity>
         <activity android:name=".Dashboard">
             <intent-filter>
@@ -34,6 +33,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <activity android:name=".Register_Activity" />
