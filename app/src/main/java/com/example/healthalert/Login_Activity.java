@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.healthalert.Bll.LoginBll;
+import com.example.healthalert.DashBoardActivity.DashBoardActivity;
 import com.example.healthalert.Model.Channel;
 import com.example.healthalert.strictmode.strictmodeclass;
 import com.example.healthalert.Model.notification;
@@ -66,11 +67,11 @@ public class Login_Activity extends AppCompatActivity {
         String password = etPassword.getText().toString();
 
         LoginBll loginBLL = new LoginBll();
-
         strictmodeclass.StrictMode();
+
         if (loginBLL.checkUser(username, password)) {
             Toast.makeText(getApplicationContext(), "Welcome to dashboard", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Login_Activity.this, Dashboard.class);
+            Intent intent = new Intent(Login_Activity.this, DashBoardActivity.class);
             intent.putExtra("user", username);
             startActivity(intent);
             finish();

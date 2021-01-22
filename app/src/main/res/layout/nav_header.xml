@@ -3,21 +3,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#A09595">
+    android:gravity="center"
+    android:background="@color/colorPrimary">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/logo" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#030303"
-        android:text="Health Alert App"/>
-
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"/>
 
 </LinearLayout>

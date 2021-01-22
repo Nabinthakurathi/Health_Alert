@@ -10,4 +10,7 @@
     <color name="colorPrimary">#C5E8E8</color>
     <color name="colorPrimaryDark">#F0EEEE</color>
     <color name="colorAccent">#D50909</color>
+
+    <color name="outdated">#bbbbbb</color>
+    <color name="active">#444444</color>
 </resources>

@@ -15,4 +15,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="title_activity_map">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="help">Simply add, edit and delete your reminders. If you have any questions, go have a beer.</string>
+
 </resources>
