@@ -2,6 +2,7 @@ package com.example.healthalert.DashBoardActivity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -11,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +30,8 @@ import android.widget.TextView;
 import com.example.healthalert.DAO;
 import com.example.healthalert.EditActivity;
 import com.example.healthalert.HelpFragment;
+import com.example.healthalert.Login_Activity;
+import com.example.healthalert.MapsActivity;
 import com.example.healthalert.R;
 import com.example.healthalert.Task;
 import com.example.healthalert.TaskReceiver;
@@ -213,13 +217,36 @@ public class DashBoardActivity extends AppCompatActivity implements TaskFragment
                     case R.id.help:
                         fragmentClass = HelpFragment.class;
                         Log.d(TAG, "Choosing help");
-                        //Intent intent = new Intent(getBaseContext(), HelpActivity.class);
-                        //DashBoardActivity.this.startActivity(intent);
                         break;
-                    case R.id.exit:
-                        finish();
-                        moveTaskToBack(true);
+                    case R.id.Map :startActivity(new Intent(DashBoardActivity.this, MapsActivity.class));
+                    default:
                         break;
+                    case R.id.Logout:
+                        final DialogInterface.OnClickListener dialog = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which){
+                                    case DialogInterface.BUTTON_POSITIVE:
+
+                                        Intent intent = new Intent(DashBoardActivity.this, Login_Activity.class);
+                                        startActivity(intent);
+                                        finish();
+
+                                        break;
+                                    case DialogInterface.BUTTON_NEGATIVE:
+
+                                        break;
+                                }
+                            }
+                        };
+                        AlertDialog.Builder builder = new AlertDialog.Builder(DashBoardActivity.this);
+                        builder.setMessage("Are you Sure you want to Logout?")
+                                .setTitle("Logout")
+                                .setPositiveButton("Yes",dialog)
+                                .setNegativeButton("No",dialog);
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                        return false;
                 }
                 switchFragment(fragmentClass);
 

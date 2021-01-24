@@ -7,8 +7,11 @@
     <item android:id="@+id/help"
         android:icon="@drawable/ic_question_answer_black_24dp"
         android:title="Help"/>
-    <item android:id="@+id/exit"
+    <item android:id="@+id/Map"
+        android:icon="@drawable/ic_menu_send"
+        android:title="NearBy Pharmacy"/>
+    <item android:id="@+id/Logout"
         android:icon="@drawable/ic_exit_to_app_black_24dp"
-        android:title="Exit"/>
+        android:title="Logout"/>
 
 </menu>

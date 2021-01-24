@@ -20,6 +20,7 @@
 
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="help">Simply add, edit and delete your reminders. If you have any questions, go have a beer.</string>
+    <string name="help">Simply add, edit and delete your Medicine Alerts. If you have any questions, Do visit nearby pharmacies.</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

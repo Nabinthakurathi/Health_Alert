@@ -9,7 +9,8 @@
     <Button
         style="@style/widget"
         android:id="@+id/add_task"
-        android:text="New Task"
+        android:background="@color/colorAccent"
+        android:text="Add Medicine"
         android:onClick="onAddClick" />
 
     <ListView

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@drawable/gradient_1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context=".EditActivity">
@@ -20,7 +21,9 @@
 
             <TextView
                 style="@style/widget"
-                android:text="Task" />
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Medicine" />
 
             <EditText
                 style="@style/widget"
@@ -78,13 +81,19 @@
 
         <Button
             style="@style/edit_button"
+            android:textColor="@color/black"
             android:id="@+id/done"
+            android:textStyle="bold"
+            android:textSize="20dp"
             android:text="Done"
             android:onClick="onDoneClick" />
 
         <Button
             style="@style/edit_button"
             android:id="@+id/cancel"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
             android:text="Cancel"
             android:onClick="onCancelClick" />
 
