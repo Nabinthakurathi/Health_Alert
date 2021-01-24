@@ -10,10 +10,10 @@ import retrofit2.Call;
 import retrofit2.Response;
 
 public class LoginBll {
-    static Boolean isSuccess = false;
+     Boolean isSuccess = false;
 
 
-    public static boolean checkUser(String username, String password){
+    public boolean checkUser(String username, String password){
 
         Userapi usersApi = Url.getInstance().create(Userapi.class);
         Call<SignUpResponse> usersCall = usersApi.CheckUser(username, password);
