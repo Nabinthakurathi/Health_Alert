@@ -2,6 +2,8 @@ package com.example.healthalert;
 
 import androidx.test.rule.ActivityTestRule;
 
+import com.example.healthalert.DashBoardActivity.DashBoardActivity;
+
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -15,9 +17,9 @@ public class InvalidLoginTest {
 
     //test for wrong login
     @Rule
-    public ActivityTestRule<Login_Activity> testRule = new ActivityTestRule<>(Login_Activity.class);
-    private String username = "dwqqw";
-    private String password = "dsadasd";
+    public ActivityTestRule<Login_Activity> testRule = new ActivityTestRule(Login_Activity.class);
+    private String username = "nabin99";
+    private String password = "9999";
 
     @Test
     public void TestUI() throws Exception

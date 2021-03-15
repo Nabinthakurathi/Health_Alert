@@ -17,8 +17,8 @@ public class ValidationTest {
     //test for wrong login
     @Rule
     public ActivityTestRule<Login_Activity> testRule = new ActivityTestRule(Login_Activity.class);
-    private String username = " ";
-    private String password = " ";
+    private String username = "nabin99";
+    private String password = "9999";
 
     @Test
     public void TestUI() throws Exception {
